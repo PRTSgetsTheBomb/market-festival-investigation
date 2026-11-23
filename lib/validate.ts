@@ -67,7 +67,7 @@ export function readLimit(v: string | null, def = 20, max = 100): number {
     if(!v) return def
     const n = Number(v)
     if(!Number.isInteger(n) || n < 1 || n > max) {
-        throw new HttpError(400, `limit bmust be 1..${max}`)
+        throw new HttpError(400, `limit must be 1...${max}`)
     }
     return n
 }
