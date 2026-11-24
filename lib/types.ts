@@ -30,4 +30,5 @@ export interface YoyRow {
     yr: number 
     day_offset: number 
     sales: number
+    qty: number
 }
