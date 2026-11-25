@@ -1,3 +1,4 @@
+// 每日趋势行数据接口
 export interface TrendRow {
     d: string
     day_offset: number,
@@ -7,6 +8,7 @@ export interface TrendRow {
     qty: number 
 }
 
+// 分类对比指数接口
 export interface ComparisonRow {
     biz_group: string 
     days: number 
@@ -15,6 +17,7 @@ export interface ComparisonRow {
     idx: number 
 }
 
+// 爆款商品接口
 export interface TopProductRow {
     product_code: string 
     name: string | null 
@@ -26,6 +29,7 @@ export interface TopProductRow {
     flag: string 
 }
 
+// 同比（YoY）数据接口
 export interface YoyRow {
     yr: number 
     day_offset: number 
